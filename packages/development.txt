@@ -1,0 +1,6 @@
+code
+zed
+dbeaver
+git
+meld
+micro

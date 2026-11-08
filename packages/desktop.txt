@@ -1,0 +1,11 @@
+brave-bin
+thunar
+tumbler
+webp-pixbuf-loader
+alacritty
+kitty
+fastfetch
+btop
+flameshot
+discord
+spotify-launcher
