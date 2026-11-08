@@ -19,15 +19,21 @@ set -l applications_dir "$HOME/.local/share/applications"
 
 # Aplicativo:arquivo de ícone
 set -l apps \
-    brave-browser:brave.webp \
+    brave-browser:brave.png \
     spotify-launcher:spotify.webp \
-    org.kde.dolphin:file_manager.png \
-    code-oss:code.webp \
-    vlc:vlc.webp \
+    thunar:file_manager.png \
+    vlc:vlc.png \
     discord:discord.webp \
-    dbeaver:dbeaver.webp \
+    io.dbeaver.DBeaver:dbeaver.webp \
     libreoffice-startcenter:libreoffice.webp \
-    steam:steam.webp
+    steam:steam.png \
+    docker:docker.webp \
+    org.gnome.Calculator:calculator.webp \
+    org.gnome.TextEditor:text_editor.webp \
+    Alacritty:alacritty.png \
+    dev.zed.Zed:zed.png \
+    code-oss:vscode.png
+
 
 mkdir -p "$applications_dir"
 
