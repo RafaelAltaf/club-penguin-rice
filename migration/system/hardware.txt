@@ -1,0 +1,290 @@
+System:
+  Kernel: 7.3.3-1-cachyos
+    arch: x86_64 bits: 64
+    compiler: clang v: 23.1.4
+    clocksource: tsc avail: acpi_pm
+    parameters: quiet nowatchdog
+    splash rw rootflags=subvol=/@
+    root=UUID=fe0e9480-431d-40e1-b04c-ce89adc25b4a
+  Desktop: Hyprland v: 0.57.1 vt: 1
+    lm: greetd Distro: CachyOS
+    base: Arch Linux
+Machine:
+  Type: Laptop System: SAMSUNG
+    product: 550XCJ/550XCR v: P12RFH
+    serial: <superuser required>
+    Chassis: type: 10
+    serial: <superuser required>
+  Mobo: SAMSUNG
+    model: NP550XCJ-KF2BR
+    v: SGLA664A0C-C01-G002-S0001+10.0.19041
+    serial: <superuser required>
+    part-nu: SCAI-A5A5-A5A5-A5A5-PRFH
+    uuid: <superuser required>
+    Firmware: UEFI
+    vendor: American Megatrends
+    v: P12RFH.054.220223.HC
+    date: 02/23/2022
+Battery:
+  ID-1: BAT1 charge: 28.5 Wh (100%)
+    condition: 28.5/43.1 Wh (66.1%)
+    volts: 12.4 min: 11.4
+    model: SAMSUNG Electronics SR
+    Real Battery type: Li-ion
+    serial: <filter> charging:
+    status: full control: start: N/A
+    end: 100% cycles: 1092
+CPU:
+  Info: model: Intel Core i5-10210U
+    bits: 64 type: MT MCP
+    arch: Comet Lake gen: core 10
+    level: v3 note: check built: 2020
+    process: Intel 14nm family: 6
+    model-id: 0xA6 (166) stepping: 0
+    microcode: 0x102
+  Topology: cpus: 1x dies: 1
+    clusters: 4 cores: 4 threads: 8
+    tpc: 2 smt: enabled cache:
+    L1: 256 KiB
+    desc: d-4x32 KiB; i-4x32 KiB
+    L2: 1024 KiB desc: 4x256 KiB
+    L3: 6 MiB desc: 1x6 MiB
+  Speed (MHz): avg: 3732
+    min/max: 400/4200 scaling:
+    driver: intel_pstate
+    governor: powersave cores:
+    1: 3732 2: 3732 3: 3732 4: 3732
+    5: 3732 6: 3732 7: 3732 8: 3732
+    bogomips: 33599
+  Flags-basic: avx avx2 ht lm nx
+    pae sse sse2 sse3 sse4_1 sse4_2
+    ssse3 vmx
+  Vulnerabilities:
+  Type: gather_data_sampling
+    status: Not affected
+  Type: ghostwrite
+    status: Not affected
+  Type: indirect_target_selection
+    mitigation: Aligned branch/return
+    thunks
+  Type: itlb_multihit
+    status: KVM: Split huge pages
+  Type: l1tf status: Not affected
+  Type: mds status: Not affected
+  Type: meltdown
+    status: Not affected
+  Type: mmio_stale_data
+    mitigation: Clear CPU buffers; SMT
+    vulnerable
+  Type: old_microcode
+    status: Not affected
+  Type: reg_file_data_sampling
+    status: Not affected
+  Type: retbleed
+    mitigation: Enhanced IBRS
+  Type: spec_rstack_overflow
+    status: Not affected
+  Type: spec_store_bypass
+    mitigation: Speculative Store
+    Bypass disabled via prctl
+  Type: spectre_v1
+    mitigation: usercopy/swapgs
+    barriers and __user pointer
+    sanitization
+  Type: spectre_v2
+    mitigation: Enhanced / Automatic
+    IBRS; IBPB: conditional;
+    PBRSB-eIBRS: SW sequence; BHI:
+    SW loop, KVM: SW loop
+  Type: srbds status: Not affected
+  Type: tsa status: Not affected
+  Type: tsx_async_abort
+    status: Not affected
+  Type: vmscape mitigation: IBPB
+    before exit to userspace
+Graphics:
+  Device-1: Intel Comet Lake UHD
+    Graphics vendor: Samsung Co
+    driver: i915 v: kernel
+    arch: Gen-9.5 process: Intel 14nm
+    built: 2016-20 ports:
+    active: eDP-1
+    empty: DP-1,HDMI-A-1
+    bus-ID: 00:02.0
+    chip-ID: 8086:9bca class-ID: 0300
+  Device-2: Silicon Motion Web
+    Camera driver: uvcvideo type: USB
+    rev: 2.0 speed: 480 Mb/s lanes: 1
+    mode: 2.0 bus-ID: 1-6:3
+    chip-ID: 2232:1080 class-ID: 0e02
+    serial: <filter>
+  Display: wayland server: Xwayland
+    v: 24.1.14 compositor: Hyprland
+    v: 0.57.1 driver: gpu: i915
+    display-ID: 1
+  Monitor-1: eDP-1
+    model: BOE Display 0x08ef
+    built: 2019 res: 1366x768
+    dpi: 101 gamma: 1.2
+    size: 344x194mm (13.54x7.64")
+    diag: 395mm (15.5") ratio: 16:9
+    modes: 1366x768
+  API: EGL v: 1.5 hw:
+    drv: intel iris platforms:
+    device: 0 drv: iris device: 1
+    drv: swrast gbm: drv: iris
+    surfaceless: drv: iris wayland:
+    drv: iris x11: drv: iris
+  API: OpenGL v: 4.6
+    vendor: intel mesa
+    v: 26.2.6-arch3.1 glx-v: 1.4
+    direct-render: yes renderer: Mesa
+    Intel UHD Graphics (CML GT2)
+    device-ID: 8086:9bca
+    memory: 15.07 GiB unified: yes
+  API: Vulkan v: 1.4.363 layers: 2
+    device: 0 type: integrated-gpu
+    name: Intel UHD Graphics (CML
+    GT2) driver: mesa intel
+    v: 26.2.6-arch3.1
+    device-ID: 8086:9bca
+    surfaces: N/A
+  Info: Tools: api: eglinfo,
+    glxinfo, vulkaninfo
+    x11: xprop,xrandr
+Audio:
+  Device-1: Intel 400 Series Family
+    On-Package HD Audio
+    vendor: Samsung Co
+    driver: snd_hda_intel v: kernel
+    alternate: snd_soc_avs,snd_sof_pci_intel_cnl
+    bus-ID: 00:1f.3
+    chip-ID: 8086:02c8 class-ID: 0401
+  API: ALSA v: k7.3.3-1-cachyos
+    status: kernel-api
+    tools: alsactl,alsamixer,amixer
+  Server-1: sndiod v: N/A
+    status: off
+    tools: aucat,midicat,sndioctl
+  Server-2: JACK v: 1.9.22
+    status: off tools: N/A
+  Server-3: PipeWire v: 1.6.10
+    status: active with:
+    1: pipewire-pulse status: active
+    2: wireplumber status: active
+    3: pipewire-alsa type: plugin
+    tools: pactl,pw-cat,pw-cli,wpctl
+Network:
+  Device-1: Intel 400 Series Family
+    On-Package CNVi WiFi
+    driver: iwlwifi v: kernel
+    bus-ID: 00:14.3
+    chip-ID: 8086:02f0 class-ID: 0280
+  IF: wlan0 state: up mac: <filter>
+  Device-2: Realtek
+    RTL8111/8168/8211/8411 PCI
+    Express Gigabit Ethernet
+    vendor: Samsung Co driver: r8169
+    v: kernel pcie: gen: 1
+    speed: 2.5 GT/s lanes: 1
+    port: 3000 bus-ID: 01:00.0
+    chip-ID: 10ec:8168 class-ID: 0200
+  IF: enp1s0 state: down
+    mac: <filter>
+  Info: services: NetworkManager,
+    systemd-timesyncd,
+    wpa_supplicant
+Bluetooth:
+  Device-1: Intel Bluetooth
+    9460/9560 Jefferson Peak (JfP)
+    driver: btusb v: 0.8 type: USB
+    rev: 2.0 speed: 12 Mb/s lanes: 1
+    mode: 1.1 bus-ID: 1-10:4
+    chip-ID: 8087:0aaa class-ID: e001
+  Report: btmgmt ID: hci0 rfk-id: 0
+    state: up address: <filter>
+    bt-v: 5.1 lmp-v: 10 status:
+    discoverable: no pairing: no
+    class-ID: 6c010c
+Drives:
+  Local Storage: total: 1.36 TiB
+    used: 18.51 GiB (1.3%)
+  SMART Message: Unable to run
+    smartctl. Root privileges
+    required.
+  ID-1: /dev/nvme0n1 maj-min: 259:0
+    vendor: Kingston model: SNV2S500G
+    size: 465.76 GiB block-size:
+    physical: 512 B logical: 512 B
+    speed: 63.2 Gb/s lanes: 4
+    tech: SSD serial: <filter>
+    fw-rev: SBI02102 temp: 54.9 C
+    scheme: GPT
+  ID-2: /dev/sda maj-min: 8:0
+    vendor: Toshiba model: MQ04ABF100
+    size: 931.51 GiB block-size:
+    physical: 4096 B logical: 512 B
+    speed: 6.0 Gb/s tech: HDD
+    rpm: 5400 serial: <filter>
+    fw-rev: 3F scheme: GPT
+Partition:
+  ID-1: / raw-size: 274.51 GiB
+    size: 274.51 GiB (100.00%)
+    used: 18.18 GiB (6.6%) fs: btrfs
+    dev: /dev/sda6 maj-min: 8:6
+  ID-2: /boot raw-size: 4.88 GiB
+    size: 4.87 GiB (99.80%)
+    used: 333.7 MiB (6.7%) fs: vfat
+    dev: /dev/sda5 maj-min: 8:5
+  ID-3: /home raw-size: 274.51 GiB
+    size: 274.51 GiB (100.00%)
+    used: 18.18 GiB (6.6%) fs: btrfs
+    dev: /dev/sda6 maj-min: 8:6
+  ID-4: /var/log
+    raw-size: 274.51 GiB
+    size: 274.51 GiB (100.00%)
+    used: 18.18 GiB (6.6%) fs: btrfs
+    dev: /dev/sda6 maj-min: 8:6
+  ID-5: /var/tmp
+    raw-size: 274.51 GiB
+    size: 274.51 GiB (100.00%)
+    used: 18.18 GiB (6.6%) fs: btrfs
+    dev: /dev/sda6 maj-min: 8:6
+Swap:
+  Kernel:
+    swappiness: 150 (default 60)
+    cache-pressure: 50 (default 100)
+    zswap: no
+  ID-1: swap-1 type: zram
+    size: 15.43 GiB
+    used: 7.38 GiB (47.8%)
+    priority: 100 comp: zstd
+    avail: lzo-rle,lzo,lz4,lz4hc,deflate,842
+    dev: /dev/zram0
+Sensors:
+  Src: /sys System Temperatures:
+    cpu: 52.0 C pch: 48.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+  Power: 12v: N/A 5v: 5 3.3v: N/A
+    vbat: N/A
+Info:
+  Memory: total: 16 GiB
+    available: 15.43 GiB
+    used: 3.09 GiB (20.0%)
+  Processes: 256 Power: uptime: 49m
+    states: freeze,mem,disk
+    suspend: deep avail: s2idle
+    wakeups: 0 hibernate: platform
+    avail: shutdown, reboot,
+    suspend, test_resume
+    image: 6.13 GiB
+    services: power-profiles-daemon,upowerd
+    Init: systemd v: 262
+    default: graphical
+    tool: systemctl
+  Packages: 1224 pm: pacman
+    pkgs: 1219 libs: 372 pm: flatpak
+    pkgs: 5 Compilers: clang: 23.1.4
+    gcc: 16.2.1 Shell: fish v: 4.9.3
+    running-in: alacritty
+    inxi: 3.3.41
