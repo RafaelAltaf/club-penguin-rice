@@ -5,7 +5,7 @@
 set script_path (realpath (status --current-filename))
 set project_root (dirname (dirname "$script_path"))
 
-set gif_dir "$project_root/assets/loading-gifs"
+set gif_dir "$project_root/assets/loading-gifs/optimized"
 set data_dir "$HOME/.local/share/club-penguin-rice"
 set fish_config "$HOME/.config/fish/config.fish"
 

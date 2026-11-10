@@ -75,6 +75,8 @@ set failed 0
 #make_sticker "assets/icons/applications/brave.webp" brave
 #or set failed 1
 
+make_sticker "assets/icons/applications/kitty.png" kitty
+or set failed 1
 echo
 
 if test $failed -eq 0

@@ -32,7 +32,8 @@ set -l apps \
     org.gnome.TextEditor:text_editor.webp \
     Alacritty:alacritty.png \
     dev.zed.Zed:zed.png \
-    code-oss:vscode.png
+    code-oss:vscode.png \
+    kitty:kitty.png
 
 
 mkdir -p "$applications_dir"
